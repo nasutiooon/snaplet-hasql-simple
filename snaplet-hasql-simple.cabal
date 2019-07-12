@@ -1,0 +1,44 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 433eae12294ea90ddd36cda3b71054e1d4a5f461e51cb44617c24b0fc67d0161
+
+name:           snaplet-hasql-simple
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/nasutiooon/kos#readme
+bug-reports:    https://github.com/nasutiooon/kos/issues
+author:         Faris Nasution
+maintainer:     electricladyland156@gmail.com
+copyright:      2018 Faris Nasution
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/nasutiooon/kos
+
+library
+  exposed-modules:
+      Snap.Snaplet.Hasql
+  other-modules:
+      Paths_snaplet_hasql_simple
+  hs-source-dirs:
+      src
+  default-extensions: OverloadedStrings GeneralizedNewtypeDeriving ConstraintKinds FlexibleContexts FlexibleInstances RecordWildCards
+  ghc-options: -Wall -Werror -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
+  build-depends:
+      base
+    , configurator
+    , hasql
+    , hasql-pool
+    , mtl
+    , snap
+    , text
+  default-language: Haskell2010

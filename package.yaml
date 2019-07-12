@@ -1,0 +1,37 @@
+name: snaplet-hasql-simple
+version: '0.1.0.0'
+category: Web
+author: Faris Nasution
+maintainer: electricladyland156@gmail.com
+copyright: 2018 Faris Nasution
+license: BSD3
+github: nasutiooon/kos
+extra-source-files:
+- README.md
+
+default-extensions:
+- OverloadedStrings
+- GeneralizedNewtypeDeriving
+- ConstraintKinds
+- FlexibleContexts
+- FlexibleInstances
+- RecordWildCards
+
+dependencies:
+- base
+
+library:
+  source-dirs: src
+  dependencies:
+  - snap
+  - hasql
+  - hasql-pool
+  - mtl
+  - configurator
+  - text
+  ghc-options:
+  - -Wall
+  - -Werror
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
