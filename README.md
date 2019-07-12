@@ -1,1 +1,1 @@
-# kos
+# Snaplet Hasql Simple
