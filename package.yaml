@@ -7,7 +7,7 @@ copyright: 2018 Faris Nasution
 license: BSD3
 github: nasutiooon/snaplet-hasql-simple
 extra-source-files:
-- README.md
+  - README.md
 
 default-extensions:
 - OverloadedStrings
@@ -16,6 +16,9 @@ default-extensions:
 - FlexibleContexts
 - FlexibleInstances
 - RecordWildCards
+
+data-files:
+  - resources/devel.cfg
 
 dependencies:
 - base
