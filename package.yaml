@@ -5,7 +5,7 @@ author: Faris Nasution
 maintainer: electricladyland156@gmail.com
 copyright: 2018 Faris Nasution
 license: BSD3
-github: nasutiooon/kos
+github: nasutiooon/snaplet-hasql-simple
 extra-source-files:
 - README.md
 

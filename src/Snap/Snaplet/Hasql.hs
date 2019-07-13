@@ -31,7 +31,7 @@ hasqlInit = makeSnaplet "hasql" description dataDir $ do
   return $ Hasql pool
   where
     description = "hasql pool"
-    dataDir = Just $ (<>"/resources/db") <$> getDataDir
+    dataDir = Just $ (<>"/resources") <$> getDataDir
 
 withHasql :: HasHasql m => (Hasql -> m a) -> m a
 withHasql = (=<< getHasql)

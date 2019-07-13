@@ -1,4 +1,4 @@
-configure-all: configure-cabal configure-nix
+configure: configure-cabal configure-nix
 
 configure-nix:
 	nix-shell --pure -p cabal2nix --run "cabal2nix ." > default.nix
