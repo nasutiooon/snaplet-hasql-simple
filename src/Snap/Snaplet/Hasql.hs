@@ -37,8 +37,9 @@ withHasql :: HasHasql m => (Hasql -> m a) -> m a
 withHasql = (=<< getHasql)
 
 runHasql :: HasHasql m => Statement a b -> a -> m (Either UsageError b)
-runHasql statement input =
-  withHasql $ \(Hasql pool) -> liftIO (use pool sess)
+runHasql statement input = do
+  Hasql pool <- getHasql
+  liftIO $ use pool sess
   where
     sess = HS.statement input statement
 
