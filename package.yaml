@@ -3,38 +3,38 @@ version: '0.1.0.0'
 category: Web
 author: Faris Nasution
 maintainer: electricladyland156@gmail.com
-copyright: 2018 Faris Nasution
+copyright: 2019 Faris Nasution
 license: BSD3
 github: nasutiooon/snaplet-hasql-simple
 extra-source-files:
   - README.md
 
 default-extensions:
-- OverloadedStrings
-- GeneralizedNewtypeDeriving
-- ConstraintKinds
-- FlexibleContexts
-- FlexibleInstances
-- RecordWildCards
+  - OverloadedStrings
+  - GeneralizedNewtypeDeriving
+  - ConstraintKinds
+  - FlexibleContexts
+  - FlexibleInstances
+  - RecordWildCards
 
 data-files:
   - resources/devel.cfg
 
 dependencies:
-- base
+  - base
 
 library:
   source-dirs: src
   dependencies:
-  - snap
-  - hasql
-  - hasql-pool
-  - mtl
-  - configurator
-  - text
+    - snap
+    - hasql
+    - hasql-pool
+    - mtl
+    - configurator
+    - text
   ghc-options:
-  - -Wall
-  - -Werror
-  - -Wincomplete-record-updates
-  - -Wincomplete-uni-patterns
-  - -Wredundant-constraints
+    - -Wall
+    - -Werror
+    - -Wincomplete-record-updates
+    - -Wincomplete-uni-patterns
+    - -Wredundant-constraints

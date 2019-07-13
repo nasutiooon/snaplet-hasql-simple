@@ -4,25 +4,27 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 433eae12294ea90ddd36cda3b71054e1d4a5f461e51cb44617c24b0fc67d0161
+-- hash: b209690ef8c08465847b32734aebc31246e67c6afcd25f2181f46137dd6b051b
 
 name:           snaplet-hasql-simple
 version:        0.1.0.0
 category:       Web
-homepage:       https://github.com/nasutiooon/kos#readme
-bug-reports:    https://github.com/nasutiooon/kos/issues
+homepage:       https://github.com/nasutiooon/snaplet-hasql-simple#readme
+bug-reports:    https://github.com/nasutiooon/snaplet-hasql-simple/issues
 author:         Faris Nasution
 maintainer:     electricladyland156@gmail.com
-copyright:      2018 Faris Nasution
+copyright:      2019 Faris Nasution
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
+data-files:
+    resources/devel.cfg
 
 source-repository head
   type: git
-  location: https://github.com/nasutiooon/kos
+  location: https://github.com/nasutiooon/snaplet-hasql-simple
 
 library
   exposed-modules:
